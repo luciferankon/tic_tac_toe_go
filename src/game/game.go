@@ -11,7 +11,7 @@ type Game struct {
 }
 
 func (game Game) MakeMove(move int, playerId int) {
-	game.Players[playerId].Moves=game.Players[playerId].MakeMove(move)
+	game.Players[playerId].MakeMove(move)
 	state := game.HasWon(playerId)
 	if state {
 		fmt.Println(game.Players[playerId].Name +" has won")

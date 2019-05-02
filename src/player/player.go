@@ -10,8 +10,8 @@ func (player Player) GetName() string {
 	return player.Name
 }
 
-func (player Player) MakeMove(move int) []int {
-	return append(player.Moves, move)
+func (player *Player) MakeMove(move int){
+	player.Moves = append(player.Moves, move)
 }
 
 func (player Player) HasMoves(moves []int) bool {

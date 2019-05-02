@@ -25,5 +25,6 @@ func main() {
 	game.MakeMove(4,1)
 	game.MakeMove(2,0)
 	game.MakeMove(5,1)
-	game.MakeMove(3,0)
+	game.MakeMove(7,0)
+	game.MakeMove(6,1)
 }
